@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title> Tutorial</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <img src="img/html logo.png">
+        </div>
+        
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search" aria-placeholder="img/search icon.png" >
+            
+        </div>
+        <div class="user-actions">
+            
+            <a href="login.html">Login</a>
+            <a href="signup.html">Signup</a>
+        </div>
+
+    </header>
+    <label>
+    <input type="checkbox">
+    <div class="toggle">
+        <span class="top_line common"></span>
+        <span class="middle_line common"></span>
+        <span class="bottom_line common"></span>
+    </div>
+    
+    
+    <div class="sidebar">        
+        <h2>My App</h2>
+        <ul>
+            <li><a href="index.html">HTML Home</a></li>
+            <li><a href="basic.html" >HTML Basics</a></li>
+            <li><a href="form.html">HTML Forms</a></li>
+            <li><a href="media.html">HTML Media</a></li>
+            <li><a href="graphics.html">HTML Graphics</a></li>
+            <li><a href="API.html">HTML API</a></li>
+            <li><a href="reference.html" class="active">HTML References</a></li>
+        </ul>
+    </div>
+    </label>
+    <!----------------reference session---------->
+    <section>
+        <div class="ref">
+            <h1 style="font-size: 35px;">References</h1><br>
+            <h2>HTTP Status Messages</h2><br>
+            <h2>HTML Error Messages</h2><br>
+            <p>When a browser requests a service from a web server, an error might occur, and the server might return an error code like "404 Not Found".<br>
+
+                It is common to name these errors HTML error messages.<br>
+                
+                But these messages are something called HTTP status messages. In fact, the server always returns a message for every request. The most common message is 200 OK.<br>
+                
+                Below is a list of HTTP status messages that might be returned:
+            </p><br>
+            <h2>1xx: Information</h2><br>
+            <img src="img/error msg.jpeg"><br><br>
+            <h2>2xx: Successful</h2><br>
+            <img src="img/2xx.jpeg"><br><br>
+            <h2>3xx: Redirection</h2><br>
+            <img src="img/3xx.jpeg"><br><br>
+            <h2>4xx: Client Error</h2><br>
+            <img src="img/4xx.jpeg"><br><br>
+            <h2>5xx: Server Error</h2><br><br>
+            <img src="img/5xx.jpeg"><br>
+            <h1>HTTP Request Methods</h1><br>
+            <h2>What is HTTP?</h2><br>
+            <p>The Hypertext Transfer Protocol (HTTP) is designed to enable communications between clients and servers.<br>
+
+                HTTP works as a request-response protocol between a client and server.<br>
+                
+                Example: A client (browser) sends an HTTP request to the server; then the server returns a response to the client. The response contains status information about the request and may also contain the requested content.
+            </p><br>
+            <h2>HTTP Methods:</h2><br>
+            <p><b>GET<br>
+                POST<br>
+                PUT<br>
+                HEAD<br>
+                DELETE<br>
+                PATCH<br>
+                OPTIONS<br>
+                CONNECT<br>
+                TRACE<br></b>
+            </p><br>
+            <h2>The GET Method</h2><br>
+            <p>GET requests can be cached<br>
+                GET requests remain in the browser history<br>
+                GET requests can be bookmarked<br>
+                GET requests should never be used when dealing with sensitive data<br>
+                GET requests have length restrictions<br>
+                GET requests are only used to request data (not modify)<br>
+                
+            </p><br>
+            <h2>The POST Method</h2><br>
+            <p>POST requests are never cached<br>
+                POST requests do not remain in the browser history<br>
+                POST requests cannot be bookmarked<br>
+                POST requests have no restrictions on data length<br>
+            </p><br>
+            <h2>The PUT Method</h2><br>
+            <p>PUT is used to send data to a server to create/update a resource.<br>
+
+                The difference between POST and PUT is that PUT requests are idempotent. That is, calling the same PUT request multiple times will always produce the same result. In contrast, calling a POST request repeatedly have side effects of creating the same resource multiple times.
+            </p><br>
+            <h2>The HEAD Method</h2><br>
+            <p>HEAD is almost identical to GET, but without the response body.<br>
+
+                In other words, if GET /users returns a list of users, then HEAD /users will make the same request but will not return the list of users.<br>
+                
+                HEAD requests are useful for checking what a GET request will return before actually making a GET request - like before downloading a large file or response body.
+            </p><br>
+            <h2>The DELETE Method</h2><br>
+            <p>The DELETE method deletes the specified resource.</p><br>
+            <h2>The PATCH Method</h2><br>
+            <p>The PATCH method is used to apply partial modifications to a resource.</p><br>
+            <h2>The OPTIONS Method</h2>
+            <p>The OPTIONS method describes the communication options for the target resource.</p><br>
+            <h2>The CONNECT Method</h2><br>
+            <p>The CONNECT method is used to start a two-way communications (a tunnel) with the requested resource.</p><br>
+            <h2>The TRACE Method</h2><br>
+            <p>The TRACE method is used to perform a message loop-back test that tests the path for the target resource (useful for debugging purposes).</p><br>
+
+
+
+        </div>
+    </section>

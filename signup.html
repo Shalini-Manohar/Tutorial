@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title> Tutorial</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <img src="img/html logo.png">
+        </div>
+        
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search" aria-placeholder="img/search icon.png" >
+            
+        </div>
+        <div class="user-actions">
+            <a href="login.html" >Login</a>
+            <a href="signup.html" class="active">Signup</a>
+        </div>
+
+    </header>
+    <label>
+        <input type="checkbox">
+        <div class="toggle">
+            <span class="top_line common"></span>
+            <span class="middle_line common"></span>
+            <span class="bottom_line common"></span>
+        </div>
+        
+        
+        <div class="sidebar">        
+            <h2>My App</h2>
+            <ul>
+                <li><a href="index.html">HTML Home</a></li>
+                <li><a href="basic.html">HTML Basics</a></li>
+                <li><a href="form.html">HTML Forms</a></li>
+                <li><a href="media.html">HTML Media</a></li>
+                <li><a href="graphics.html">HTML Graphics</a></li>
+                <li><a href="API.html">HTML API</a></li>
+                <li><a href="reference.html">HTML References</a></li>
+            </ul>
+        </div>
+        </label>
+        <!-----------------signup session------------>
+        <div class="login-container">
+            <h2>Signin</h2>
+            <form action="login.php" method="POST">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <input type="submit" value="Signin">
+            </form>
+        </div>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title> Tutorial</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <img src="img/html logo.png">
+        </div>
+        
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search" aria-placeholder="img/search icon.png" >
+            
+        </div>
+        <div class="user-actions">
+            <a href="login.html">Login</a>
+            <a href="signup.html">Signup</a>
+        </div>
+
+    </header>
+    <label>
+    <input type="checkbox">
+    <div class="toggle">
+        <span class="top_line common"></span>
+        <span class="middle_line common"></span>
+        <span class="bottom_line common"></span>
+    </div>
+    
+    
+    <div class="sidebar">        
+        <h2>My App</h2>
+        <ul>
+            <li><a href="index.html">HTML Home</a></li>
+            <li><a href="basic.html" class="active">HTML Basics</a></li>
+            <li><a href="form.html">HTML Forms</a></li>
+            <li><a href="media.html">HTML Media</a></li>
+            <li><a href="graphics.html">HTML Graphics</a></li>
+            <li><a href="API.html">HTML API</a></li>
+            <li><a href="reference.html">HTML References</a></li>
+        </ul>
+    </div>
+    </label>
+    <!---------------basics section--------->
+    <section>
+        <div class="basics">
+            <h1 style="font-size: 35px;"> Introduction</h1>
+            <h2>What is HTML?</h2><br>
+            <ol >
+                <li class="ol">HTML stands for Hyper Text Markup Language</li><br>
+                <li class="ol">HTML is the standard markup language for creating Web pages</li><br>
+                <li class="ol">HTML describes the structure of a Web page</li><br>
+                <li class="ol">HTML consists of a series of elements</li><br>
+                <li class="ol">HTML elements tell the browser how to display the content</li><br>
+                <li class="ol">HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li><br>   
+            </ol>
+            <h2>Anatomy of an HTML element:</h2><br><br>
+            <img src="img/anatomy.png" style="margin-left: 70px;"><br>
+            <p>The anatomy of our element is:</p><br>
+            <p><b>The opening tag:</b> This consists of the name of the element (in this example, p for paragraph), wrapped in opening and closing angle brackets. This opening tag marks where the element begins or starts to take effect. In this example, it precedes the start of the paragraph text.<br><br>
+                <b>The content:</b> This is the content of the element. In this example, it is the paragraph text.<br><br>
+                <b>The closing tag:</b> This is the same as the opening tag, except that it includes a forward slash before the element name. This marks where the element ends. Failing to include a closing tag is a common beginner error that can produce peculiar results.<br><br>
+            </p>
+            <h2>HTML Documents</h2><br>
+            <p>All HTML documents must start with a document type declaration:<span>&lt;!doctype html&gt;</span>.<br><br>
+
+                The HTML document itself begins with&lt;html&gt;</span> and ends with<span>&lt;/html&gt;</span><br><br>
+                
+                The visible part of the HTML document is between <span>&lt;body&gt;</span>and<span>&lt;/body&gt;</span>.<br><br>
+            </p>
+            <img src="img/html doc.jpeg" style="margin-left: 0px;">
+            <h2>The &lt;!DOCTYPE&gt; Declaration</h2><br>
+            <p>The <span>&lt;!DOCTYPE&gt;</span> declaration represents the document type, and helps browsers to display web pages correctly.<br><br>
+
+                It must only appear once, at the top of the page (before any HTML tags).<br><br>
+                
+                The <span>&lt;!DOCTYPE&gt; </span>declaration is not case sensitive.<br><br>
+                
+                The <span>&lt;!DOCTYPE&gt; </span>declaration for HTML5 is:<br><br>
+                <img src="img/htmlss.jpeg" style="padding-left: 0px;">
+            </p><br>
+            <h2>Headings</h2><br>
+            <p>A HTML heading or HTML h tag can be defined as a title or a subtitle which you want to display on the webpage. When you place the text within the heading tags <span>&lt;h1&gt;.........&lt;/h1&gt;</span>, it is displayed on the browser in the bold format and size of the text depends on the number of heading.<br><br>
+
+                There are six different HTML headings which are defined with the <span>&lt;h1&gt;</span> to <span>&lt;h6&gt;</span> tags, from highest level h1 (main heading) to the least level h6 (least important heading).<br><br>
+                
+                h1 is the largest heading tag and h6 is the smallest one. So h1 is used for most important heading and h6 is used for least important.<br><br>
+            </p>
+            <h3>See this example:</h3><br>
+            <img src="img/head example.jpeg" style="margin-left: 80px;">
+            <h3>Output:</h3><br>
+            <img src="img/head out.jpeg" style="margin-left: 80px;"><br>
+            <h2>Paragraph</h2><br>
+            <p>HTML paragraph or HTML p tag is used to define a paragraph in a webpage.<br><br> Let's take a simple example to see how it work.<br><br> It is a notable point that a browser itself add an empty line before and after a paragraph. An HTML <span>&lt;p&gt;</span> tag indicates starting of new paragraph<span>&lt;/p></span>.<br><br>
+            <h3>See this example:</h3><br>
+            <img src="img/p example.jpeg" style="margin-left: 80px;"><br>
+            <h3>Output:</h3><br>
+            <img src="img/p output.jpeg" style="margin-left: 80px;"><br>
+            <h2>Links</h2><br>
+            <p>HTML links are defined with the <span>&lt;a&gt;</span> tag:
+            </p><br>
+            <img src="img/link example.jpeg" style="margin-left: 80px;"><br>
+            <p>The link's destination is specified in the <span>href </span>attribute. </p><br>
+            <p>By default, links will appear as follows in all browsers:<br><br>
+                <ul style="margin-left: 30px;">
+                   <li class="ol">An unvisited link is underlined and blue</li><br>
+                   <li class="ol">A visited link is underlined and purple</li><br>
+                   <li class="ol">An active link is underlined and red</li><br>
+                </ul>
+            </p><br><br>
+            <h2>HTML Links - The target Attribute</h2><br>
+            <p>By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.<br><br>
+
+                The target attribute specifies where to open the linked document.<br><br>
+                
+                The target attribute can have one of the following values:<br><br>
+                <ul style="margin-left: 30px;">
+                
+                    <li class="ol"><span>_self</span> - Default. Opens the document in the same window/tab as it was clicked</li><br><br>
+                    <li class="ol"><span>_blank</span> - Opens the document in a new window or tab</li><br><br>
+                    <li class="ol"><span>_parent</span> - Opens the document in the parent frame</li><br><br>
+                    <li class="ol"><span>_top</span> - Opens the document in the full body of the window</li><br><br>
+                </ul>
+            </p><br>
+            <h2>HTML Links - Use an Image as a Link</h2><br>
+            <p>To use an image as a link, just put the <span>&lt;img&gt;</span> tag inside the <span>&lt;a&gt;</span> tag:</p><br>
+            <img src="img/link img example.jpeg"style="margin-left: 80px;"><br>
+            <h2>The src Attribute</h2><br>
+            <p>The required <span>src</span> attribute specifies the path (URL) to the image.</p><br>
+            <img src="img/src example.jpeg"style="margin-left: 80px;"><br>
+            <h2>The alt Attribute</h2><br>
+            <p>The required <span>alt</span> attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).<br><br>
+
+                The value of the <span>alt</span> attribute should describe the image:
+            </p><br>
+            <img src="img/alt example.jpeg" style="margin-left: 80px;"><br>
+            <p>If a browser cannot find an image, it will display the value of the <span>alt</span> attribute.</p><br><br>
+            <h2>Image Size - Width and Height</h2><br>
+            <p>You can use the <span>style</span> attribute to specify the width and height of an image.</p><br><br>
+            <img src="img/width height.jpeg" style="margin-left: 80px;"><br><br>
+            <p>Alternatively, you can use the <span>width</span> and <span>height</span> attributes:</p><br><br>
+            <img src="img/width height 2.jpeg" style="margin-left: 80px;"><br>
+            <h2>Elements</h2><br><br>
+            <p>The HTML <span>element</span> is everything from the start tag to the end tag:<br><br>
+
+                <span>&lt;tagname></span>Content goes here...<span>&lt;/tagname></span><br><br>
+                Examples of some HTML elements:<br><br>
+                
+                <span>&lt;h1></span>My First Heading<span>&lt;/h1></span><br><br>
+                <span>&lt;p></span>My first paragraph.<span>&lt;/p></span><br><br>
+            </p>
+            <table class="table">
+                <tr>
+                <th>Start tag</th>
+                <th>Element content</th>
+                <th>End tag</th>
+                </tr>
+                <tr>
+                <td>&lt;h1&gt;</td>
+                <td>My First Heading</td>
+                <td>&lt;/h1&gt;</td>
+                </tr>
+                <tr>
+                <td>&lt;p&gt;</td>
+                <td>My first paragraph.</td>
+                <td>&lt;/p&gt;</td>
+                </tr>
+                <tr>
+                <td>&lt;br&gt;</td>
+                <td><em>none</em></td>
+                <td><em>none</em></td>
+                </tr>
+            </table><br><br>
+            <h2>Attributes</h2><br><br>
+            <p>All HTML elements can have attributes<br><br>
+                Attributes provide additional information about elements<br><br>
+                Attributes are always specified in the start tag<br><br>
+                Attributes usually come in name/value pairs like: name="value"<br><br>
+            </p>
+            <h3>1.The href Attribute</h3><br><br>
+            <p>The <span>&lt;a></span> tag defines a hyperlink. The <span>href</span> attribute specifies the URL of the page the link goes to:<br><br> 
+            </p>
+            <img src="img/href attribute.jpeg"  style="margin-left: 80px;"><br><br>
+            <h3>2.The src Attribute</h3><br><br>
+            <p>The <span>&lt;img></span> tag is used to embed an image in an HTML page. The <span>src</span> attribute specifies the path to the image to be displayed:</p><br>
+            <img src="img/src attribute.jpeg"  style="margin-left: 80px;"><br><br>
+            <h3>3.The width and height Attributes</h3><br><br>
+            <p>The <span>&lt;img> </span>tag should also contain the <span>width </span>and <span>height</span> attributes, which specify the width and height of the image (in pixels):</p><br>
+            <img src="img/wid nd height attribute.jpeg"  style="margin-left: 80px;"><br><br>
+            <h3>4.The alt Attribute</h3><br><br>
+            <p>The required <span>alt</span> attribute for the <span>&lt;img></span> tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to a slow connection, or an error in the <span>src</span> attribute, or if the user uses a screen reader.<br><br></p>
+            <img src="img/alt attribute.jpeg"  style="margin-left: 80px;"><br><br>
+            <h3>5.The style Attribute</h3><br><br>
+            <p>The <span>style</span> attribute is used to add styles to an element, such as color, font, size, and more.</p>
+            <img src="img/style attribute.jpeg"  style="margin-left: 80px;"><br><br>
+            <h3>6.The lang Attribute</h3><br><br>
+            <p>You should always include the <span>lang </span> attribute inside the <span>&lt;html></span> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.</p>
+            <img src="img/lang attribute.jpeg"  style="margin-left: 80px;"><br><br>
+            <h3>7.The title Attribute</h3><br><br>
+            <p>The <span>title</span> attribute defines some extra information about an element.
+
+                The value of the title attribute will be displayed as a tooltip when you mouse over the element:
+            </p><br><br>
+            <img src="img/title attribute.jpeg"  style="margin-left: 80px;"><br><br>
+
+
+
+
+        
+            
+
+
+
+        </div>
+    </section>
